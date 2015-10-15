@@ -231,7 +231,7 @@ if $enable_ssl {
     raw_prepend         => $raw_prepend,
     use_default_location => false,
     index_files => [],
-    www_root            => $root,
+    www_root            => "${root}/public",
     vhost_cfg_append    => {
       'passenger_enabled' => 'on',
       'passenger_ruby'    => '/usr/bin/ruby',
