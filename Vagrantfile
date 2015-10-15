@@ -90,7 +90,7 @@ Vagrant.configure('2') do |config|
     if ENV['AWS_SECURITY_GROUPS']
       provider.security_groups = ENV['AWS_SECURITY_GROUPS'].strip.split(/\s+/)
     else
-      provider.security_groups = ['sshonly']
+      provider.security_groups = ['lfsserver']
     end
     if ENV['AWS_SUBNET_ID']
       provider.subnet_id = ENV['AWS_SUBNET_ID']
